@@ -1,81 +1,64 @@
-/* Estilos generales */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #e3ffe7, #d9e7ff);
   color: #333;
 }
 
-/* Encabezado */
 header {
   text-align: center;
-  padding: 30px 20px;
-  background-color: #0d6efd;
+  padding: 20px;
+  background-color: #ff3c38;
   color: white;
 }
 
-header .banner {
+.banner {
   width: 100%;
   max-height: 350px;
   object-fit: cover;
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
-/* Sección de cursos */
-.cursos {
-  padding: 40px 20px;
+h2 {
   text-align: center;
-}
-
-.cursos h2 {
-  font-size: 2em;
-  color: #0d6efd;
-  margin-bottom: 30px;
+  margin: 40px 0 20px;
 }
 
 .galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  max-width: 1000px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
 }
 
 .curso {
-  background: #fff;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .curso:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
 }
 
 .curso img {
   width: 100%;
-  height: 160px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 15px;
+  border-radius: 8px;
 }
 
-.curso h3 {
-  font-size: 1.2em;
-  color: #333;
-}
-
-/* Pie de página */
 footer {
-  background-color: #0d6efd;
+  background-color: #ff3c38;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
   margin-top: 40px;
-  border-top: 5px solid #ffc107;
 }
+
